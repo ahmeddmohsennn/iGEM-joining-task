@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# 🧬 iGEM Project: C. acnes SSI Detection System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Preview](https://img.shields.io/badge/Live-Preview-brightgreen?style=for-the-badge&logo=vercel)](https://your-preview-link.vercel.app)
+[![Next.js](https://img.shields.io/badge/Built%20with-Next.js%2015-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![iGEM](https://img.shields.io/badge/iGEM-2024-blue?style=for-the-badge)](https://igem.org)
 
-Currently, two official plugins are available:
+A high-performance, visually stunning web application for detecting *C. acnes* post-surgical site infections (SSI). This project utilizes synthetic biology approaches, including an AND-gate genetic circuit and a chitosan-matrix bandage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **🚀 Next.js 15 App Router**: Utilizing the latest React patterns for maximum performance.
+- **🎨 Glassmorphic Design**: A modern, premium UI/UX with smooth glassy effects and vibrant aesthetics.
+- **📦 3D Visualization**: Integrated Three.js and React Three Fiber for interactive biological models (Smart Bandage).
+- **🎭 Motion & Transitions**: Seamless page transitions and animations powered by Framer Motion.
+- **📱 Fully Responsive**: Optimized for every device, from mobile to ultra-wide displays.
+- **🛠️ iGEM Optimized**: Pre-configured for static export (`output: 'export'`) to ensure compatibility with iGEM wiki servers.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: Next.js 15 (React 19)
+- **Styling**: Tailwind CSS & Vanilla CSS
+- **Animations**: Framer Motion
+- **3D Engine**: Three.js / React Three Fiber
+- **UI Components**: Radix UI
+- **Icons**: Lucide React
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To run this project locally, follow these steps:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ahmeddmohsennn/iGEM-joining-task.git
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📦 Building for iGEM Wiki
+
+To generate the static files required for the iGEM wiki upload:
+
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The output will be located in the `/out` directory. This directory contains the standalone HTML, CSS, and JS files ready for deployment.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👥 Team
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Ahmed Mohsen** - Lead Developer & Project Lead
+- *And the incredible iGEM Team members...*
+
+---
+
+> [!TIP]
+> This project is designed to be visually interactive. Explore the 3D smart bandage models and the experimental genetic circuit diagrams for a full experience.
+
+---
+© 2024 iGEM Team. Built with ❤️ and Science.
